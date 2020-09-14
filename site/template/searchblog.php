@@ -132,8 +132,7 @@ function create_posts_html($posts,$my_root )
 		}
 		$publish_date=date('M, d Y', $publish_date);
 
-		$final_posts_html .=	<<< POSTDESIGN
-
+		$final_posts_html .=    <<< POSTDESIGN
 		<div class="blog-post-item $design">
 		<div class=" $design_offset col-md-6 col-sm-6">
 		<div class="thumb-wrap">
