@@ -1,0 +1,238 @@
+[19-Feb-2018 13:17:20 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home1/phpbd/rahad/admin/db.php on line 8
+[19-Feb-2018 13:27:01 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home1/phpbd/rahad/admin/db.php on line 8
+[19-Feb-2018 13:37:00 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'phpbd_rahad'@'localhost' (using password: YES) in /home1/phpbd/rahad/admin/db.php on line 8
+[19-Feb-2018 13:41:46 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'phpbd_rahad'@'localhost' (using password: YES) in /home1/phpbd/rahad/admin/db.php on line 8
+[19-Feb-2018 14:24:20 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'phpbd_rahad'@'localhost' (using password: YES) in /home1/phpbd/rahad/admin/db.php on line 8
+[19-Feb-2018 14:27:05 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'phpbd_rahad'@'localhost' (using password: YES) in /home1/phpbd/rahad/admin/db.php on line 8
+[19-Feb-2018 14:27:07 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'phpbd_rahad'@'localhost' (using password: YES) in /home1/phpbd/rahad/admin/db.php on line 8
+[19-Feb-2018 14:32:45 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'phpbd_rahad'@'localhost' (using password: YES) in /home1/phpbd/rahad/admin/db.php on line 8
+[19-Feb-2018 18:03:33 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'phpbd_rahad'@'localhost' (using password: YES) in /home1/phpbd/rahad/admin/db.php on line 8
+[19-Feb-2018 19:05:08 UTC] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'phpbd_rahad'@'localhost' to database 'phpbd_rahad' in /home1/phpbd/rahad/admin/db.php on line 8
+[26-Feb-2018 17:28:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[26-Feb-2018 17:32:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[26-Feb-2018 17:32:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[26-Feb-2018 17:33:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[26-Feb-2018 17:33:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[28-Feb-2018 10:52:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[28-Feb-2018 17:54:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[01-Mar-2018 17:47:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[02-Mar-2018 21:38:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[03-Mar-2018 08:17:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[03-Mar-2018 15:35:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[03-Mar-2018 15:36:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[03-Mar-2018 15:37:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_result::fetch_All() in /home1/phpbd/rahad/site/header.php:9
+Stack trace:
+#0 /home1/phpbd/rahad/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/rahad/site/header.php on line 9
+[05-Mar-2018 08:27:30 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 36
+[05-Mar-2018 08:27:30 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 08:27:30 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 08:27:30 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 08:30:40 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 36
+[05-Mar-2018 08:30:40 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 08:30:40 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 08:30:40 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:00:26 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 36
+[05-Mar-2018 09:00:26 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:00:26 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:00:26 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:20:00 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 36
+[05-Mar-2018 09:20:00 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:20:00 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:20:00 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:21:47 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 36
+[05-Mar-2018 09:21:47 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:21:47 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:21:47 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:21:54 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 36
+[05-Mar-2018 09:21:54 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:21:54 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:21:54 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:22:05 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 36
+[05-Mar-2018 09:22:05 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:22:05 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:22:05 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:25:09 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 36
+[05-Mar-2018 09:25:09 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:25:09 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:25:09 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:25:14 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:25:14 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:25:14 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:25:14 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 40
+[05-Mar-2018 09:27:20 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:27:20 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:27:20 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:27:20 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 40
+[05-Mar-2018 09:28:55 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:28:55 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:28:55 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:28:55 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 40
+[05-Mar-2018 09:43:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:44:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:46:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:46:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:46:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:46:36 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:47:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:48:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_All() on boolean in /home1/phpbd/raziul/site/header.php:16
+Stack trace:
+#0 /home1/phpbd/raziul/site/index.php(2): require_once()
+#1 {main}
+  thrown in /home1/phpbd/raziul/site/header.php on line 16
+[05-Mar-2018 09:48:32 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 09:48:32 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 09:48:32 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 09:48:32 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 40
+[05-Mar-2018 11:21:26 UTC] PHP Notice:  Array to string conversion in /home1/phpbd/raziul/site/header.php on line 17
+[05-Mar-2018 11:21:26 UTC] PHP Warning:  extract() expects parameter 1 to be array, null given in /home1/phpbd/raziul/site/header.php on line 18
+[05-Mar-2018 11:21:26 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 11:21:26 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 11:21:26 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 11:21:26 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 40
+[05-Mar-2018 11:21:43 UTC] PHP Notice:  Array to string conversion in /home1/phpbd/raziul/site/header.php on line 17
+[05-Mar-2018 11:21:43 UTC] PHP Warning:  extract() expects parameter 1 to be array, null given in /home1/phpbd/raziul/site/header.php on line 18
+[05-Mar-2018 11:21:43 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 11:21:43 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 11:21:43 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 11:21:43 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 40
+[05-Mar-2018 11:22:11 UTC] PHP Notice:  Array to string conversion in /home1/phpbd/raziul/site/header.php on line 17
+[05-Mar-2018 11:22:11 UTC] PHP Warning:  extract() expects parameter 1 to be array, null given in /home1/phpbd/raziul/site/header.php on line 18
+[05-Mar-2018 11:22:11 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 11:22:11 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 11:22:11 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 11:22:11 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 40
+[05-Mar-2018 11:22:45 UTC] PHP Warning:  extract() expects parameter 1 to be array, null given in /home1/phpbd/raziul/site/header.php on line 18
+[05-Mar-2018 11:22:45 UTC] PHP Notice:  Undefined variable: fb_link in /home1/phpbd/raziul/site/template/contact.php on line 37
+[05-Mar-2018 11:22:45 UTC] PHP Notice:  Undefined variable: twitter_link in /home1/phpbd/raziul/site/template/contact.php on line 38
+[05-Mar-2018 11:22:45 UTC] PHP Notice:  Undefined variable: insta_link in /home1/phpbd/raziul/site/template/contact.php on line 39
+[05-Mar-2018 11:22:45 UTC] PHP Notice:  Undefined variable: Linkedin_link in /home1/phpbd/raziul/site/template/contact.php on line 40
+[05-Mar-2018 11:25:51 UTC] PHP Notice:  Array to string conversion in /home1/phpbd/raziul/site/header.php on line 17
+[05-Mar-2018 11:29:05 UTC] PHP Parse error:  syntax error, unexpected 'EXTR_PREFIX_SAME' (T_STRING), expecting ',' or ')' in /home1/phpbd/raziul/site/header.php on line 18
+[05-Mar-2018 11:29:14 UTC] PHP Parse error:  syntax error, unexpected 'EXTR_PREFIX_SAME' (T_STRING), expecting ',' or ')' in /home1/phpbd/raziul/site/header.php on line 18
+[05-Mar-2018 11:29:43 UTC] PHP Parse error:  syntax error, unexpected 'EXTR_PREFIX_SAME' (T_STRING), expecting ',' or ')' in /home1/phpbd/raziul/site/header.php on line 18
+[05-Mar-2018 11:30:39 UTC] PHP Notice:  Undefined variable: contact_content in /home1/phpbd/raziul/site/template/contact.php on line 31
+[06-Mar-2018 11:07:16 UTC] PHP Notice:  Undefined variable: banner_imgurl in /home1/phpbd/raziul/site/index.php on line 22
+[06-Mar-2018 11:07:17 UTC] PHP Notice:  Undefined variable: banner_imgurl in /home1/phpbd/raziul/site/index.php on line 22
