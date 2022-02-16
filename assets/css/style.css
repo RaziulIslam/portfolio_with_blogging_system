@@ -35,6 +35,7 @@ body {
   font-size: 14px;
   line-height: 1.6em;
   -webkit-backface-visibility: hidden;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -314,7 +315,6 @@ a:focus {
 
 .navbar.navbar-default {
   border: 0;
-  border-bottom: 1px solid #333;
   background-color: transparent;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -533,7 +533,8 @@ a:focus {
 }
 
 .hero-banner .hero-banner-content .banner-subtitle {
-  color: #fff;
+  width: 56%;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;

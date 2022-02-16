@@ -1,14 +1,13 @@
 <div class="row">
                         <div class="col-xs-12">
                             <div class="copyright-text text-center white-text">
-                                <p>&copy; Copyright 2018 developed by: <a href="#"><?=$fullname?></a>. All rights reserved.</p>
+                                <p> &copy; Copyright 2018 <?=(date('Y')>2018?' - '.date('Y'):'')?> developed by: <a href="#"><?=$fullname?></a>. All rights reserved.</p>
                             </div>
                         </div>
                     </div>
                 </div>  <!--/.container-->
             </div> <!--/.contact-section-->
             <!-- contact section end -->
-
         </div>
         
         <!-- load bootstrap -->
@@ -26,6 +25,4 @@
         <!-- load main js -->
         <script src="assets/js/main.js"></script>
     </body>
-
-<!-- Mirrored from sitetemplate.demo.ithemeslab.com/james/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Dec 2017 10:27:50 GMT -->
 </html>

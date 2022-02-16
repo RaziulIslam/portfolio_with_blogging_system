@@ -24,35 +24,25 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <div class="experience-content-wrap" id="experience">
-
-
-
-                </div> <!--/.experience-content-wrap-->
+                <div class="experience-content-wrap" id="experience"></div> 
+                <!--/.experience-content-wrap-->
                 <script>
-                    function get_experience_ajax(page_id=1)
-                    {
-
-                       $.ajax({
-                        type: "POST",
-                        url: "<?=$my_root.'site/template/getexperience.php';?>", 
-                        data:{page_id:page_id},
-                        success: function(result){
-                          var obj = jQuery.parseJSON(result);
-
-                              $('#experience').html(obj.posts);
-
-                          }
-                      });
-                   }
+                    function get_experience_ajax(page_id=1){
+                        $.ajax({
+                            type: "POST",
+                            url: "<?=$my_root.'site/template/getexperience.php';?>", 
+                            data:{page_id:page_id},
+                            success: function(result){
+                                var obj = jQuery.parseJSON(result);
+                                $('#experience').html(obj.posts);
+                            }
+                        });
+                    }
 
                    get_experience_ajax();
-
-
-            </script>
-        </div> <!--/.col-->
-    </div> <!--/.row-->
-
-</div> <!--/.container-->
+                </script>
+            </div> <!--/.col-->
+        </div> <!--/.row-->
+    </div> <!--/.container-->
 </div> <!--/.#experience-section-->
 <!-- experience sectiton end -->

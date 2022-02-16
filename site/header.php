@@ -3,14 +3,14 @@
     require_once "../root.php";
     require_once "../admin/db.php";
 
-    $sql ="SELECT * FROM profile";
-    $posts=$conn->query($sql);
-    $posts=$posts->fetch_All(MYSQLI_ASSOC);
+    $sql = "SELECT * FROM profile";
+    $posts = $conn->query($sql);
+    $posts = $posts->fetch_All(MYSQLI_ASSOC);
     extract($posts[0]);
 
-    $sql2 ="SELECT * FROM contact";
-    $contact=$conn->query($sql2);
-    $contact=$contact->fetch_All(MYSQLI_ASSOC);
+    $sql2 = "SELECT * FROM contact";
+    $contact = $conn->query($sql2);
+    $contact = $contact->fetch_All(MYSQLI_ASSOC);
     extract($contact[0]);
 
     $imgurl = $my_root.'uploads/'.$h_img;

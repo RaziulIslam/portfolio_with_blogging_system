@@ -1,7 +1,5 @@
 <?php 
-require_once "header.php";
-
-
+    require_once "header.php";
 ?>
 
 <!-- hero banner start -->
@@ -29,13 +27,12 @@ require_once "header.php";
 <?php include_once "template/portfolio.php";?>
 <?php include_once "template/reference.php";?>
 <?php include_once "template/blog.php";?>
-
 <?php include_once "template/contact.php";?>
+
 <?php if (isset($_SESSION['login'])):?>   
 
 <?php else:?>
     <?php require_once "../login.php";?>
-
 <?php endif;?>
 
 <?php require_once "footer.php";?>

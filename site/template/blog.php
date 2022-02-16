@@ -1,6 +1,5 @@
 <?php 
-require_once "singlepost.php";
-
+    require_once "singlepost.php";
 ?>
 <!-- blog sectioin start -->
 <div id="blog-section" class="blog-section pad120">
@@ -25,98 +24,80 @@ require_once "singlepost.php";
                 </div>
             </div> <!--/.col-->
         </div> <!--/.row-->
+
         <div>
             <div class="col-md-12">
                 <div style="float: right;">
                     <label>Search blog</label>
                     <input type="text" name="blog" id="blog" class="form-control">
-                    <div id="blogList"><ul class="list-unstyled">
-                    </ul>
-                </div>    
+                    <div id="blogList">
+                        <ul class="list-unstyled"></ul>
+                    </div>
+                </div>
             </div>
-
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <div class="blog-post-list">
-                <div id="pagination">                    </div>
-                <div id="posts">                    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blog-post-list">
+                    <div id="pagination"></div>
+                    <div id="posts"></div>
 
-                <script>
-                    function get_blogs_ajax(page_id=1)
-                    {
-                        var query = $('#blog').val();
-                        if (query != '') {
+                    <script>
+                        function get_blogs_ajax(page_id=1){
+                            var query = $('#blog').val();
+                            if (query != '') {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "<?=$my_root.'site/template/searchblog.php';?>", 
+                                    data:{page_id:page_id,query:query},
+                                    success: function(result){
+                                        var obj = jQuery.parseJSON(result);
+                                        
+                                        $('#pagination').html(obj.page);
+                                        $('#posts').html(obj.posts);
+                                    }
+                                });
+                            } else {
+                                $.ajax({
+                                    type: "POST",
+                                    url: "<?=$my_root.'site/template/getblogs.php';?>", 
+                                    data: {page_id:page_id,query:query},
+                                    success: function(result){
+                                        var obj = jQuery.parseJSON(result);
 
-                           $.ajax({
-                            type: "POST",
-                            url: "<?=$my_root.'site/template/searchblog.php';?>", 
-                            data:{page_id:page_id,query:query},
-                            success: function(result){
-                              var obj = jQuery.parseJSON(result);
+                                        $('#pagination').html(obj.page);
+                                        $('#posts').html(obj.posts);
+                                    }
+                                });
+                            }
+                        }
 
-                              // console.log(obj);
+                        get_blogs_ajax();
 
-                              $('#pagination').html(obj.page);
-                              $('#posts').html(obj.posts);
+                        $('#blog').keyup(function(){
+                            page_id = 1;
+                            var query = $(this).val();
 
+                            $.ajax({
+                                type: "POST",
+                                url: "<?=$my_root.'site/template/searchblog.php';?>", 
+                                data: {page_id:page_id,query:query},
+                                success: function(result){
+                                    var obj = jQuery.parseJSON(result);
 
-                          }
-                      });
-                       }
-                       else{
-                           $.ajax({
-                            type: "POST",
-                            url: "<?=$my_root.'site/template/getblogs.php';?>", 
-                            data:{page_id:page_id,query:query},
-                            success: function(result){
-                              var obj = jQuery.parseJSON(result);
+                                    $('#pagination').html(obj.page);
+                                    $('#posts').html(obj.posts);
+                                }
+                            });
+                        });
+                    </script>
 
-                              // console.log(obj);
-
-                              $('#pagination').html(obj.page);
-                              $('#posts').html(obj.posts);
-
-
-                          }
-                      });
-                       }
-
-                   }
-
-                   get_blogs_ajax();
-
-                   $('#blog').keyup(function(){
-                    page_id =1;
-                    var query = $(this).val();
-                     $.ajax({
-                        type: "POST",
-                        url: "<?=$my_root.'site/template/searchblog.php';?>", 
-                        data:{page_id:page_id,query:query},
-                        success: function(result){
-                          var obj = jQuery.parseJSON(result);
-
-                              // console.log(obj);
-
-                              $('#pagination').html(obj.page);
-                              $('#posts').html(obj.posts);
-
-
-                          }
-                      });
-
-               });
-
-           </script>
-
-       </div>
-   </div> <!--/.col-->
-</div> <!--/.row-->
-
-</div> <!--/.container-->
+                </div>
+            </div> <!--/.col-->
+        </div> <!--/.row-->
+    </div> <!--/.container-->
 </div> <!--/#blog-section-->
-<!-- blog sectioin end -->
+<!-- blog section end -->
 
 

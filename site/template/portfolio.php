@@ -1,8 +1,7 @@
 <?php
-$sql = "SELECT * FROM post WHERE post_type='portfolio' AND status='publish' ORDER BY id ASC";
-$portfolio = $conn->query($sql);
-$portfolio=($portfolio->num_rows >0)?$portfolio->fetch_All(MYSQLI_ASSOC): '';
-
+    $sql = "SELECT * FROM post WHERE post_type='portfolio' AND status='publish' ORDER BY id ASC";
+    $portfolio = $conn->query($sql);
+    $portfolio = ($portfolio->num_rows > 0) ? $portfolio->fetch_All(MYSQLI_ASSOC): '';
 ?>
 
 <!-- portfolio section start -->
@@ -33,9 +32,9 @@ $portfolio=($portfolio->num_rows >0)?$portfolio->fetch_All(MYSQLI_ASSOC): '';
                     <?php 
 
                     if(is_array($portfolio)):
-                        for($i=0; $i<5; $i++):
+                        for($i = 0; $i < 5; $i++):
                             
-                            $data = isset($portfolio[$i])?$portfolio[$i]:$portfolio[0];
+                            $data = isset($portfolio[$i]) ? $portfolio[$i] : $portfolio[0];
                             extract($data);
                             $portfolio_imgurl = $my_root.'uploads/'.$f_img;
 
@@ -43,102 +42,94 @@ $portfolio=($portfolio->num_rows >0)?$portfolio->fetch_All(MYSQLI_ASSOC): '';
                                 case 0:
                                     $design = <<<DGN1
                                     <div class="portfolio-item grid-item">
-                                    <div class="portfolio-thumb">
-                                        <img src="$portfolio_imgurl" alt="">
-                                        <div class="overley">
-                                            <div class="portfolio-title">
-                                                <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
-                                                <h4>$title</h4>
+                                        <div class="portfolio-thumb">
+                                            <img src="$portfolio_imgurl" alt="">
+                                            <div class="overley">
+                                                <div class="portfolio-title">
+                                                    <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
+                                                    <h4>$title</h4>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
 DGN1;
                                     break;
 
-                                    case 1:
+                                case 1:
                                     $design = <<<DGN1
                                     <div class="portfolio-item grid-item grid-item--width2">
-                                    <div class="portfolio-thumb">
-                                        <img src="$portfolio_imgurl" alt="">
-                                        <div class="overley">
-                                            <div class="portfolio-title">
-                                                <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
-                                                <h4>$title</h4>
+                                        <div class="portfolio-thumb">
+                                            <img src="$portfolio_imgurl" alt="">
+                                            <div class="overley">
+                                                <div class="portfolio-title">
+                                                    <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
+                                                    <h4>$title</h4>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
 DGN1;
                                     break;
 
-                                    case 2:
+                                case 2:
                                     $design = <<<DGN1
-                                    
-                                
-                                <div class="portfolio-item grid-item">
-                                    <div class="portfolio-thumb">
-                                        <img src="$portfolio_imgurl" alt="">
-                                        <div class="overley">
-                                            <div class="portfolio-title">
-                                                <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
-                                                <h4>$title</h4>
+                                    <div class="portfolio-item grid-item">
+                                        <div class="portfolio-thumb">
+                                            <img src="$portfolio_imgurl" alt="">
+                                            <div class="overley">
+                                                <div class="portfolio-title">
+                                                    <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
+                                                    <h4>$title</h4>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
 DGN1;
                                     break;
                                 
-
-                                    case 3:
+                                case 3:
                                     $design = <<<DGN1
-                                    
-                                
-                                  <div class="portfolio-item grid-item">
-                                    <div class="portfolio-thumb">
-                                        <img src="$portfolio_imgurl" alt="">
-                                        <div class="overley">
-                                            <div class="portfolio-title">
-                                                <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
-                                                <h4>$title</h4>
+                                    <div class="portfolio-item grid-item">
+                                        <div class="portfolio-thumb">
+                                            <img src="$portfolio_imgurl" alt="">
+                                            <div class="overley">
+                                                <div class="portfolio-title">
+                                                    <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
+                                                    <h4>$title</h4>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
 DGN1;
                                     break;
 
-
-                                    case 4:
+                                case 4:
                                     $design = <<<DGN1
-                                    
-                                
-                                <div class="portfolio-item grid-item">
-                                    <div class="portfolio-thumb">
-                                        <img src="$portfolio_imgurl" alt="">
-                                        <div class="overley">
-                                            <div class="portfolio-title">
-                                                <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
-                                                <h4>$title</h4>
+                                    <div class="portfolio-item grid-item">
+                                        <div class="portfolio-thumb">
+                                            <img src="$portfolio_imgurl" alt="">
+                                            <div class="overley">
+                                                <div class="portfolio-title">
+                                                    <a href="$portfolio_imgurl" class="img-lightbox"><i class="fa fa-search"></i></a>
+                                                    <h4>$title</h4>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
 DGN1;
                                     break;
+
                                 default:
                                     # code...
                                     break;
                             }
-                            echo $design;
+                                echo $design;
                             ?>
-
 
                             <?php
 
