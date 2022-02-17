@@ -1,11 +1,6 @@
 <?php include_once "site/header.php";?>
-	<style type="text/css">
-		/* body {
-			padding-top: 40px;
-			padding-bottom: 40px;
-			background-color: #f5f5f5;
-		} */
 
+	<style type="text/css">
 		.form-signin {
 			max-width: 300px;
 			padding: 19px 29px 29px;
@@ -34,6 +29,7 @@
 		}
 
 	</style>
+
 	<!-- contact section start -->
 	<div id="login-form" class="login-form pad-top140 parallax bg-img-2 alter-text">
 		<div class="container">
