@@ -1,19 +1,17 @@
 <?php
-require_once "../root.php";
-session_start();
+    require_once "../root.php";
+    session_start();
 
-extract($_SESSION);
-if(!$login)
-{
-    header("Location: $my_root");
-}
-
+    extract($_SESSION);
+    if(!$login){
+        header("Location: $my_root");
+    }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,21 +19,13 @@ if(!$login)
     <meta name="author" content="">
 
     <title>Admin</title>
-
-    <!-- Bootstrap Core CSS -->
+    <!-- load vendor css start -->
     <link href="<?=$my_root.'admin/asset';?>/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
     <link href="<?=$my_root.'admin/asset';?>/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="<?=$my_root.'admin/asset';?>/dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
     <link href="<?=$my_root.'admin/asset';?>/vendor/morrisjs/morris.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
     <link href="<?=$my_root.'admin/asset';?>/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- load vendor css end -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,20 +35,13 @@ if(!$login)
     <![endif]-->
     <link href="<?=$my_root.'admin/asset';?>/css/imageupload.css" rel="stylesheet">
 
-<!-- jQuery -->
     <script src="<?=$my_root.'admin/asset';?>/vendor/jquery/jquery.min.js"></script>
-
-    <!-- ckeditor -->
-
     <script src="<?=$my_root.'plugins/ckeditor';?>/ckeditor.js"></script>
     <script src="<?=$my_root.'plugins/ckeditor';?>/js/sample.js"></script>
-
 </head>
 
 <body>
-
     <div id="wrapper">
-
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
@@ -289,17 +272,16 @@ if(!$login)
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
                             </div>
                             <!-- /input-group -->
                         </li>
                         <li>
                             <a href="<?=$my_root.'admin';?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
-                        
                         <li>
                             <a href="#"><i class="fa fa-files-o fa-fw"></i>Blog<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -312,7 +294,7 @@ if(!$login)
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                         <li>
+                        <li>
                             <a href="#"><i class="fa fa-files-o fa-fw"></i>Profile<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
@@ -336,16 +318,16 @@ if(!$login)
                                 <li>
                                     <a href="<?=$my_root.'admin/contact.php';?>">Contact</a>
                                 </li>
-                              
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
             </div>
             <!-- /.navbar-static-side -->
         </nav>
-
-        
+    </div>
+    <!-- /#wrapper -->
+</div>
+<!-- /#page-wrapper -->

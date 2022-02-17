@@ -1,60 +1,48 @@
 <?php
 
-if(!$_POST)
-{
-	echo 'Are you kidding...';
-	header("Location: admin");
-}
+	if(!$_POST){
+		echo 'Are you kidding...';
+		header("Location: admin");
+	}
 
-require_once "../root.php";
-require_once "db.php";
+	require_once "../root.php";
+	require_once "db.php";
 
-extract($_POST);
-extract($_FILES['image-file']);
+	extract($_POST);
+	extract($_FILES['image-file']);
 
- $current_date = time();
-// echo '<pre>';
+	$current_date = time();
 
-// var_dump($_FILES);
-// echo $name;
+	// die('<br>________end upload code__________');
 
+	$sql = "INSERT INTO post (title, content, cat_id,author_id, f_img, publish_date,status,post_type,sub_title,duration)
+	VALUES ('$title', '$content', 1, 1, '','$current_date','$status','$post_type','$subtitle','$duration')";
 
- // die('<br>________end upload code__________');
+	if ($conn->query($sql) === TRUE){
+		echo "New record created successfully";
+	}else{
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
 
-$sql = "INSERT INTO post (title, content, cat_id,author_id, f_img, publish_date,status,post_type,sub_title,duration)
-VALUES ('$title', '$content', 1, 1, '','$current_date','$status','$post_type','$subtitle','$duration')";
+	/* file upload via php */
+	if($name){
+		$file_name = $conn->insert_id."$name";
+	}
+	else{
+		$file_name = '';
+	}
 
+	move_uploaded_file($tmp_name, "../uploads/$file_name");
 
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
+	/* update filenmae into database */
 
-/* file upload via php */
-if($name)
-{
-		$file_name =$conn->insert_id."$name";
+	$update_sql = "UPDATE `post` SET `f_img` = '$file_name' WHERE `id` = $conn->insert_id";
 
-}
-else{
-		$file_name ='';
+	if($conn->query($update_sql) === TRUE){
+		echo "New record created successfully";
+	}else{
+		echo "Error: " . $update_sql . "<br>" . $conn->error;
+	}
 
-}
-		move_uploaded_file($tmp_name, "../uploads/$file_name");
-
-/* update filenmae into database */
-
-		$update_sql ="UPDATE `post` SET `f_img` = '$file_name' WHERE `id` = $conn->insert_id";
-
-		if ($conn->query($update_sql) === TRUE) {
-		    echo "New record created successfully";
-		} else {
-		    echo "Error: " . $update_sql . "<br>" . $conn->error;
-		}
-
-/* finally redirect to old page*/
-header("Location: $my_root/admin/blog.php");
-
-
-
+	/* finally redirect to old page*/
+	header("Location: $my_root/admin/blog.php");

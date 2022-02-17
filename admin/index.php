@@ -1,14 +1,11 @@
 <?php
-include_once "header.php";
-require_once "../root.php";
+	include_once "header.php";
+	require_once "../root.php";
 
-
-extract($_SESSION);
-if(!$login)
-{
-	header("Location: $my_root");
-}
-
+	extract($_SESSION);
+	if(!$login){
+		header("Location: $my_root");
+	}
 ?>
 
 <div id="page-wrapper">
@@ -16,7 +13,6 @@ if(!$login)
 		<div class="col-lg-12">
 			<h1 class="page-header">Dashboard</h1>
 		</div>
-		<!-- /.col-lg-12 -->
 	</div>
 	<!-- /.row -->
 	
@@ -111,11 +107,6 @@ if(!$login)
 		</div>
 	</div>
 	<!-- /.row -->
-	
-
-	<?php
-
+<?php
 	include_once "footer.php";
-
-
-
+?>

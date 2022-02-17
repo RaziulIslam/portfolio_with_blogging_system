@@ -1,19 +1,16 @@
 <?php
 
-	if(!$_POST)
-	{
+	if(!$_POST){
 		echo 'Are you kidding...';
 		header("Location: admin");
 	}
 
 	require_once "../root.php";
-
 	require_once "db.php";
 
 	extract($_POST);
 
-
-	$sql = "INSERT INTO reference (content, designation,name)
+	$sql = "INSERT INTO reference (content, designation, name)
 		VALUES ('$content', '$designation','$name')";
 
 	if($conn->query($sql) === TRUE){
@@ -28,7 +25,7 @@
 		extract($_FILES['client-image-file']);
 
 		/* file upload via php */
-		$client_image_file = ($name) ? $conn->insert_id."$name":'';
+		$client_image_file = ($name) ? $conn->insert_id."$name" : '';
 		move_uploaded_file($tmp_name, "../uploads/clients/$client_image_file");
 
 		/* update filename into database */
