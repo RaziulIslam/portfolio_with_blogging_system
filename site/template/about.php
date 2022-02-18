@@ -61,7 +61,7 @@
                             </div> <!--/.bio-table-->
                         </div> <!--/.col-->
                     </div> <!--/.row-->
-                    <a href="#" class="btn btn-primary">Download Resume</a>
+                    <a href="https://drive.google.com/file/d/19ILBJ7NZVBPar_cB_2QeFUYjtJAI2Uvy/view?usp=sharing" class="btn btn-primary" target="_blank">Download Resume</a>
                 </div>
             </div> <!--/.col-->
         </div> <!--/.row-->
