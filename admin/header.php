@@ -3,8 +3,10 @@
     session_start();
 
     extract($_SESSION);
-    if(!$login){
-        header("Location: $my_root");
+    if (headers_sent()) {
+        die("Redirect failed. Please click on this link: <a href=...>");
+    } else {
+        exit(header("Location: $my_root"));
     }
 ?>
 
